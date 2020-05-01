@@ -17,10 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/registroMonitor', function () {
-    return view('registroMonitor');
-});
-
 
 //CREAR VISTAS
 Route::get('/modAdministrador', function () {
@@ -33,9 +29,8 @@ Route::get('/modMonitor', function () {
     return view('modMonitor');
 })->name('modMonitor');
 
-
 Route::get('/registroMonitor', function () {
-    return view('registroMonitor');
+    return view('administrador.registroMonitor');
 });
 Route::get('/controlSala', function () {
     return view('controlSala');

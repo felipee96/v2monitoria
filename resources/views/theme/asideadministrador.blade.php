@@ -1,9 +1,6 @@
-<aside class="main-sidebar  elevation-4" style="background: #11998e;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-">
+<aside class="main-sidebar  elevation-4" style="background: #50d890">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="/modAdministrador" class="brand-link">
       <img src= "{{asset("assets/img/logoCorhuila.jpg")}}" class="brand-image img-rounded">
       <span class="brand-text font-weight-light">CORHUILA</span>
     </a>
@@ -13,9 +10,9 @@ background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, F
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <li class="nav-header" style="text-align:center; font-size:25px;">MENÚ</li>                  
+          <li class="nav-header" style="text-align:center; font-size:25px;">ADMINISTRADOR</li>                  
           <hr style="width:90%; background-color: green; height: 1px">
-          <li class="nav-item has-treeview">
+          <li class="nav-item has-treeview" style="color: white;">
             <a href="#" class="nav-link">
               <i class="fas fa-users"></i>
               <p>
@@ -25,7 +22,7 @@ background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, F
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="login" class="nav-link">
+                <a href="/registroMonitor" class="nav-link">
                   <i class="fas fa-user-plus nav-icon"></i>
                   <p>Añadir monitor</p>
                 </a>

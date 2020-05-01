@@ -1,6 +1,6 @@
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
+<aside class="main-sidebar  elevation-4" style="background: #50d890">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="/modMonitor" class="brand-link">
       <img src= "{{asset("assets/img/logoCorhuila.jpg")}}" class="brand-image img-rounded">
       <span class="brand-text font-weight-light">CORHUILA</span>
     </a>
@@ -10,7 +10,7 @@
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <li class="nav-header" style="text-align:center; font-size:25px;">MENÚ</li>                  
+          <li class="nav-header" style="text-align:center; font-size:25px">MONITOR</li>                  
           <hr style="width:90%; background-color: green; height: 1px">
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
