@@ -1,0 +1,59 @@
+body{
+	background-image: url(../imagenes/fondo.jpeg);
+	background-size: cover;
+}
+h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+  
+}
+h2{
+    text-align: center;
+    color: aliceblue;
+    color: rgb(14, 116, 20); margin-top: 10px;
+    font-family: 'fantasy';
+}
+.setion{
+    opacity: 0.8;
+    width: 400px;
+    height: 500px;
+    margin: 50px;
+    background-color:rgba(225, 235, 227, 0.89);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  
+}
+.imagen{
+    height: 200px; 
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+h3{
+    text-align: center;
+}
+a.dropdown-item{
+    
+    text-align: center;
+    background: #014516;
+    color: whitesmoke;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+a.dropdown-item:hover {
+    background: #25994a;
+    color: whitesmoke;
+  }
