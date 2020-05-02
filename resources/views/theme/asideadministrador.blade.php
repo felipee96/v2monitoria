@@ -57,76 +57,17 @@
                   <p>Ver reportes</p>
                 </a>
               </li>
-            </ul>
-          </li>
-
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="fas fa-university"></i>
-              <p>
-                Sedes
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
+              <li class="nav-item has-treeview">
               <li class="nav-item">
                 <a href="pages/charts/chartjs.html" class="nav-link">
-                  <i class="fas fa-plus nav-icon"></i>
-                  <p>Añadir sede</p>
+                  <i class="fas fa-desktop nav-icon"></i>
+                  <p>Fallas en equipo</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="pages/charts/flot.html" class="nav-link">
-                  <i class="fas fa-search nav-icon"></i>
-                  <p>Ver sedes</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="fas fa-chalkboard-teacher"></i>
-              <p>
-                Salas
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
-                  <i class="fas fa-plus nav-icon"></i>
-                  <p>Añadir sala</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
-                  <i class="fas fa-search nav-icon"></i>
-                  <p>Ver salas</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="fas fa-calendar"></i>
-              <p>
-                Horarios
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
-                  <i class="fas fa-calendar-plus nav-icon"></i>
-                  <p>Añadir horario</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
-                  <i class="fas fa-calendar-check nav-icon"></i>
-                  <p>Ver horarios</p>
+                  <i class="fas fa-book-dead nav-icon"></i>
+                  <p>Pérdida</p>
                 </a>
               </li>
             </ul>

@@ -48,13 +48,13 @@
               <li class="nav-item">
                 <a href="pages/charts/chartjs.html" class="nav-link">
                   <i class="fas fa-desktop nav-icon"></i>
-                  <p>Falla en computador</p>
+                  <p>Fallas en equipo</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="pages/charts/flot.html" class="nav-link">
                   <i class="fas fa-book-dead nav-icon"></i>
-                  <p>Perdida</p>
+                  <p>Pérdida</p>
                 </a>
               </li>
             </ul>

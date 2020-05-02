@@ -39,6 +39,10 @@ Route::get('/prueba', function() {
     return view('prueba');
 })->name('prueba');
 
+Route::get('/registroSala', function () {
+    return view('administrador.registroSala');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
