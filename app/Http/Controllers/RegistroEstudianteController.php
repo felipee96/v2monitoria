@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Model\registroEstudiante;
 
 class RegistroEstudianteController extends Controller
 {
@@ -13,7 +14,7 @@ class RegistroEstudianteController extends Controller
      */
     public function index()
     {
-        //
+        return view('monitor.registroEstudiante');
     }
 
     /**
@@ -34,7 +35,9 @@ class RegistroEstudianteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $datosRegistro = request()->except('_token');
+        registroEstudiante::insert($datosRegistro);
+        return view('modMonitor');
     }
 
     /**

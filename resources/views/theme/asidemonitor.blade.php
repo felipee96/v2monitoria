@@ -22,7 +22,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="/control" class="nav-link">
                   <i class="fas fa-user-plus nav-icon"></i>
                   <p>Registrar estudiante</p>
                 </a>

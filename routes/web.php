@@ -43,3 +43,7 @@ Route::resource('/fallas', 'ReportarFallaController');
 
 Route::get('/perdidas','PerdidaController@index');
 Route::resource('/perdidas', 'PerdidaController');
+
+Route::get('/control','RegistroEstudianteController@index');
+Route::resource('/control', 'RegistroEstudianteController');
+

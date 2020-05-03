@@ -69,7 +69,7 @@
     </div>
     <div class="form-group">
         <label for="inputState">Nombre del administrador:</label>
-        <input type="text" class="form-control" id="administrador" name="administrador" aria-describedby="emailHelp" placeholder=Nombre Administrador" value="{{ Auth::user()->name }}" readonly>
+        <input type="text" class="form-control" id="administrador" name="administrador" aria-describedby="emailHelp" placeholder="Nombre Administrador" value="{{ Auth::user()->name }}" readonly>
     </div>
     <button type="submit" class="btn btn-primary">Guardar</button>
 </form>

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRegistroAdministradorsTable extends Migration
+class CreateRegistroEstudiantesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,15 @@ class CreateRegistroAdministradorsTable extends Migration
      */
     public function up()
     {
-        Schema::create('registro_administradors', function (Blueprint $table) {
+        Schema::create('registro_estudiantes', function (Blueprint $table) {
             $table->id();
-            $table->string('cedula',50);
+            $table->string('codigo');
             $table->string('nombre',50);            
             $table->string('apellido',50);
-            $table->string('telefono',50);
+            $table->string('programa',50);
+            $table->string('semestre',50);
+            $table->string('equipo',50);
+            $table->string('monitor',50);
         });
     }
 
@@ -29,6 +32,6 @@ class CreateRegistroAdministradorsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('registro_administradors');
+        Schema::dropIfExists('registro_estudiantes');
     }
 }
