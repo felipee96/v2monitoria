@@ -7,10 +7,10 @@
     <div class="form-row">
         <div class="form-group col-md-6">
         <label for="inputState">Nombre monitor:</label>
-        <select name="nombreMonitor" id="nombreMonitor" class="form-control">
+        <select name="nombre" id="nombre" class="form-control">
             <option value="">--Seleccionar</option>
             @foreach (nombreMonitor() as $nombreMonitor)
-              <option value="{{$nombreMonitor->id}}">{{$nombreMonitor->name}}</option>
+              <option value="{{$nombreMonitor->name}}">{{$nombreMonitor->name}}</option>
             @endforeach
         </select>
         </div>
@@ -53,7 +53,7 @@
             <label for="sala">Sala en la que va a laborar</label>
             <select id="sala" class="form-control" name="sala">
             <option value="">Seleccionar--</option>
-            <option value=">C4-11">C4-11</option>
+            <option value="C4-11">C4-11</option>
             <option value="B2-208">B2-208</option>
             </select>
         </div>
@@ -69,9 +69,9 @@
     </div>
     <div class="form-group">
         <label for="inputState">Nombre del administrador:</label>
-        <input type="text" class="form-control" id="nombreAdmin" name="nombreAdmin" aria-describedby="emailHelp" placeholder=Nombre Administrador" value="{{ Auth::user()->name }}" readonly>
+        <input type="text" class="form-control" id="administrador" name="administrador" aria-describedby="emailHelp" placeholder=Nombre Administrador" value="{{ Auth::user()->name }}" readonly>
     </div>
     <button type="submit" class="btn btn-primary">Guardar</button>
-  </form>
+</form>
     
 @endsection

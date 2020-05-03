@@ -22,7 +22,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/registroMonitor" class="nav-link">
+                <a href="/registro" class="nav-link">
                   <i class="fas fa-user-plus nav-icon"></i>
                   <p>Añadir monitor</p>
                 </a>
@@ -59,7 +59,7 @@
               </li>
               <li class="nav-item has-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="fas fa-desktop nav-icon"></i>
                   <p>Fallas en equipo</p>
                 </a>

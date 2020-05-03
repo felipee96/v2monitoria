@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Model\registromonitor;
+use App\Model\registromonitor;
 
 class RegistromonitorController extends Controller
 {
@@ -14,7 +14,7 @@ class RegistromonitorController extends Controller
      */
     public function index()
     {
-        return view('administrador/registroMonitor');
+        return view('administrador.registroMonitor');
     }
 
     /**

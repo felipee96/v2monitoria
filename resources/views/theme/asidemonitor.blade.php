@@ -46,7 +46,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="/fallas" class="nav-link">
                   <i class="fas fa-desktop nav-icon"></i>
                   <p>Fallas en equipo</p>
                 </a>

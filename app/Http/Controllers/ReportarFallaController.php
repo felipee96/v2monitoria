@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Model\reportarFalla;
 
-class ObjperdidoController extends Controller
+class ReportarFallaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,7 @@ class ObjperdidoController extends Controller
      */
     public function index()
     {
-        //
+        return view('administrador.reportarFallas');
     }
 
     /**
@@ -34,7 +35,9 @@ class ObjperdidoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $datosRegistro = request()->except('_token');
+        reportarFalla::insert($datosRegistro);
+        return view('modAdministrador');
     }
 
     /**

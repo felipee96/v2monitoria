@@ -22,7 +22,6 @@ class CreateRegistromonitorsTable extends Migration
             $table->string('sala',50);
             $table->string('horario',50);
             $table->string('administrador',50);
-            $table->timestamps();
         });
     }
 

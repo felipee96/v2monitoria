@@ -23,31 +23,21 @@ Route::get('/modAdministrador', function () {
     return view('modAdministrador');
 })->name('modAdministrador');
 
+Route::get('/modMonitor', function () {
+    return view('modMonitor');
+})->name('modMonitor');
 
-
-
-
-Route::get('/registroMonitor', function () {
-    return view('administrador.registroMonitor');
-});
-Route::get('/controlSala', function () {
-    return view('controlSala');
-});
-Route::get('/prueba', function() {
-    return view('prueba');
-})->name('prueba');
-
-Route::get('/registroSala', function () {
-    return view('administrador.registroSala');
-});
 
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
 
 
 
 
-
+//CREAR VISTAS PARA FORMULARIOS
 Route::get('/registro','RegistroMonitorController@index');
 Route::resource('/registro', 'RegistroMonitorController');
+
+
+Route::get('/fallas','ReportarFallaController@index');
+Route::resource('/fallas', 'ReportarFallaController');
