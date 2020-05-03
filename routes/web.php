@@ -47,3 +47,10 @@ Route::resource('/perdidas', 'PerdidaController');
 Route::get('/control','RegistroEstudianteController@index');
 Route::resource('/control', 'RegistroEstudianteController');
 
+Route::get('/Ver_Estudiantes','RegistroEstudianteController@verEstudiantes');
+
+Route::get('/Ver_Monitores','RegistromonitorController@verMonitores');
+
+Route::get('/Ver_Fallas','ReportarFallaController@verFallas');
+
+Route::get('/Ver_Perdidas','PerdidaController@verPerdidas');

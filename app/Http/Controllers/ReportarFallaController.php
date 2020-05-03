@@ -16,6 +16,10 @@ class ReportarFallaController extends Controller
     {
         return view('monitor.reportarFallas');
     }
+    public function verFallas()
+    {
+        return view('administrador.verFallas');
+    }
 
     /**
      * Show the form for creating a new resource.

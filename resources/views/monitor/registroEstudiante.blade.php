@@ -3,7 +3,7 @@
 @section('contenido')
 <form class="container" method="POST" action="{{url('control')}}" style="width: 50%;">
     {{ csrf_field()}}
-    <h1>REGISTRO DE ESTUDIANTES</h1>
+    <h1 style="text-align: center">REGISTRO DE ESTUDIANTES</h1>
     <div class="form-row">
             <label for="inputState">Codigo del estudiante:</label>
             <input type="text" class="form-control" id="codigo" name="codigo" aria-describedby="Ingrese Codigo" placeholder="Codigo">

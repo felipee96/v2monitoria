@@ -16,6 +16,10 @@ class PerdidaController extends Controller
     {
         return view('monitor.reportarPerdidas');
     }
+    public function verPerdidas()
+    {
+        return view('administrador.verPerdidas');
+    }
 
     /**
      * Show the form for creating a new resource.

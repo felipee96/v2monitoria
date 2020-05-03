@@ -1,5 +1,5 @@
-<aside class="main-sidebar  elevation-4" style="background: #50d890">
-    <!-- Brand Logo -->
+<aside class="main-sidebar  sidebar-dark-primary elevation-4" style="background: #014516">
+  <!-- Brand Logo -->
     <a href="/modMonitor" class="brand-link">
       <img src= "{{asset("assets/img/logoCorhuila.jpg")}}" class="brand-image img-rounded">
       <span class="brand-text font-weight-light">CORHUILA</span>
@@ -28,7 +28,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
+                <a href="/Ver_Estudiantes" class="nav-link">
                   <i class="fas fa-user-edit nav-icon"></i>
                   <p>Ver estudiantes</p>
                 </a>

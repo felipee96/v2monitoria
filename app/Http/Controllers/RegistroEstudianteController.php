@@ -16,7 +16,12 @@ class RegistroEstudianteController extends Controller
     {
         return view('monitor.registroEstudiante');
     }
-
+    public function verEstudiantes()
+    {
+        return view('monitor.verEstudiantes');
+    }
+    
+    
     /**
      * Show the form for creating a new resource.
      *

@@ -16,7 +16,10 @@ class RegistromonitorController extends Controller
     {
         return view('administrador.registroMonitor');
     }
-
+    public function verMonitores()
+    {
+        return view('administrador.verMonitores');
+    }
     /**
      * Show the form for creating a new resource.
      *
