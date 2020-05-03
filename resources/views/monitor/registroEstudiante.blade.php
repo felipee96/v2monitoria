@@ -67,7 +67,9 @@
         <label for="inputState">Nombre del monitor:</label>
         <input type="text" class="form-control" id="monitor" name="monitor" aria-describedby="emailHelp" placeholder="Nombre Monitor" value="{{ Auth::user()->name }}" readonly>
     </div>
-    <button type="submit" class="btn btn-primary">Guardar</button>
+    <div style="text-align:center;">
+        <button type="submit" class="btn btn-success">Guardar</button>
+    </div>
 </form>
     
 @endsection

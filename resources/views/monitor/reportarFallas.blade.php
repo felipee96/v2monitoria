@@ -46,6 +46,8 @@
       <label for="inputAddress">Descripcion</label>
       <input type="text" class="form-control" id="descripcion" name="descripcion" placeholder="Ingrese descripcion">
     </div>
-    <button type="submit" class="btn btn-primary">Guardar</button>
+    <div style="text-align:center;">
+        <button type="submit" class="btn btn-success">Guardar</button>
+    </div>
 </form>
 @endsection

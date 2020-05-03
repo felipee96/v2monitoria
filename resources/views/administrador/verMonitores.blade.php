@@ -1,6 +1,7 @@
 @extends('modAdministrador')
 
 @section('contenido')
+    @include('administrador/editar')
     <h1 style="text-align: center">Monitores ingresados</h1>
     <table class="table table-striped">
         <thead>
@@ -26,8 +27,14 @@
                     <td>{{$row->sala }}</td>
                     <td>{{$row->horario }}</td>
                     <td>{{$row->administrador }}</td>
+                    <td>
+                        <a href="/editar" class="btn btn-success pull-right" data-toggle="modal" data-target="#editar">EDITAR</a>
+                    </td>
+                    <td>
+                        <a href="#" class="btn btn-danger">ELIMINAR</a>
+                    </td>
                 </tr>
-            @endforeach
+            @endforeach-
         </tbody>
     </table>
     
