@@ -38,6 +38,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/registro','RegistroMonitorController@index');
 Route::resource('/registro', 'RegistroMonitorController');
 
-
 Route::get('/fallas','ReportarFallaController@index');
 Route::resource('/fallas', 'ReportarFallaController');
+
+Route::get('/perdidas','PerdidaController@index');
+Route::resource('/perdidas', 'PerdidaController');

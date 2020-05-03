@@ -52,7 +52,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
+                <a href="/perdidas" class="nav-link">
                   <i class="fas fa-book-dead nav-icon"></i>
                   <p>Pérdida</p>
                 </a>
