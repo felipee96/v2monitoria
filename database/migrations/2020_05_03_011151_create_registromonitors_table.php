@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateObjperdido extends Migration
+class CreateRegistromonitorsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,15 @@ class CreateObjperdido extends Migration
      */
     public function up()
     {
-        Schema::create('objperdido', function (Blueprint $table) {
+        Schema::create('registromonitors', function (Blueprint $table) {
             $table->id();
-            $table->string('monitor',50);
-            $table->string('sede',50);
+            $table->string('nombre',50);
+            $table->string('codigo');
+            $table->string('programa',50);
+            $table->string('semestre',50);
             $table->string('sala',50);
-            $table->string('equipo',50);
-            $table->string('objeto',50);
-            $table->string('descripcion',200);
+            $table->string('horario',50);
+            $table->string('administrador',50);
             $table->timestamps();
         });
     }
@@ -32,6 +33,6 @@ class CreateObjperdido extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('objperdido');
+        Schema::dropIfExists('registromonitors');
     }
 }

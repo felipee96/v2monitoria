@@ -25,9 +25,7 @@ Route::get('/modAdministrador', function () {
 
 
 
-Route::get('/modMonitor', function () {
-    return view('modMonitor');
-})->name('modMonitor');
+
 
 Route::get('/registroMonitor', function () {
     return view('administrador.registroMonitor');
@@ -46,3 +44,10 @@ Route::get('/registroSala', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+
+
+Route::get('/registro','RegistroMonitorController@index');
+Route::resource('/registro', 'RegistroMonitorController');
