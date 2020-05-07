@@ -20,13 +20,12 @@
     </div>
     <div class="form-row">
         <div class="form-group col-md-6">
-            <label for="facultad">Programa</label>
-            <select id="programa" class="form-control" name="programa">
-            <option value="">Seleccionar--</option>
-            <option value="SISTEMAS">SISTEMAS</option>
-            <option value="MECATRONICA">MECATRONICA</option>
-            <option value="INDUSTRIAL">INDUSTRIAL</option>
-            <option value="AMBIENTAL">AMBIENTAL</option>
+            <label for="inputState">Programa:</label>
+            <select name="programa" id="programa" class="form-control">
+                <option value="">--Seleccionar</option>
+                @foreach (nombrePrograma() as $nombrePrograma)
+                  <option value="{{$nombrePrograma->nombre}}">{{$nombrePrograma->nombre}}</option>
+                @endforeach
             </select>
         </div>
         

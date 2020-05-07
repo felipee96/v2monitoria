@@ -5,11 +5,11 @@ use App\Model\registroEstudiante;
 use App\Model\registromonitor;
 use App\Model\reportarFalla;
 use App\Model\perdida;
+use App\Model\programa;
 
-
-function nombreMonitor (){
-    $nombreMonitor = User::all();
-    return $nombreMonitor;
+function nombrePrograma (){
+    $users = programa::all();
+    return $users;
 }
 
 function verEstudiate(){
