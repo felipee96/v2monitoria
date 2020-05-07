@@ -22,44 +22,30 @@
         <div class="form-group col-md-6">
             <label for="inputState">Programa:</label>
             <select name="programa" id="programa" class="form-control">
-                <option value="">--Seleccionar</option>
+                <option value="">Seleccionar</option>
                 @foreach (nombrePrograma() as $nombrePrograma)
                   <option value="{{$nombrePrograma->nombre}}">{{$nombrePrograma->nombre}}</option>
                 @endforeach
             </select>
         </div>
-        
         <div class="form-group col-md-6">
-            <label for="semestre">Semestre</label>
-            <select id="semestre" class="form-control" name="semestre">
-            <option value="">Seleccionar--</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
+            <label for="inputState">Semestre:</label>
+            <select name="semestre" id="semestre" class="form-control">
+                <option value="">Seleccionar</option>
+                @foreach (semestre() as $semestre)
+                  <option value="{{$semestre->semestre}}">{{$semestre->semestre}}</option>
+                @endforeach
             </select>
         </div>
+        
     </div>
     <div class="form-group">
-        <label for="equipo">Equipo</label>
-        <select id="equipo" class="form-control" name="equipo">
-            <option value="">Seleccionar--</option>
-            <option value="PC 1">PC 1</option>
-            <option value="PC 2">PC 2</option>
-            <option value="PC 3">PC 3</option>
-            <option value="PC 4">PC 4</option>
-            <option value="PC 5">PC 5</option>
-            <option value="PC 6">PC 6</option>
-            <option value="PC 7">PC 7</option>
-            <option value="PC 8">PC 8</option>
-            <option value="PC 9">PC 9</option>
-            <option value="PC 10">PC 10</option>
+        <label for="inputState">Equipo:</label>
+        <select name="equipo" id="equipo" class="form-control">
+            <option value="">Seleccionar</option>
+            @foreach (equipo() as $equipo)
+            <option value="{{$equipo->equipo}}">{{$equipo->equipo}}</option>
+            @endforeach
         </select>
     </div>
     <div class="form-group">

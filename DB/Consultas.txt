@@ -1,0 +1,6 @@
+INSERT INTO `sala` (`id`, `sala`) VALUES (NULL, 'C-411'), (NULL, 'B-505');
+INSERT INTO `equipo` (`id`, `equipo`) VALUES (NULL, 'PC 1'), (NULL, 'PC 2'), (NULL, 'PC 3'), (NULL, 'PC 4'), (NULL, 'PC 5'), (NULL, 'PC 6'), (NULL, 'PC 7'), (NULL, 'PC 8');
+INSERT INTO `horario` (`id`, `horario`) VALUES (NULL, '6 am - 10 am'), (NULL, '10 am - 2 pm'), (NULL, '2 pm - 4 pm');
+INSERT INTO `semestre` (`id`, `semestre`) VALUES (NULL, '1'), (NULL, '2'), (NULL, '3'), (NULL, '4'), (NULL, '5'), (NULL, '6'), (NULL, '7'), (NULL, '8'), (NULL, '9'), (NULL, '10');
+INSERT INTO `programa` (`id`, `nombre`) VALUES (NULL, 'SISTEMAS'), (NULL, 'MECATRONICA'), (NULL, 'VETERINARIA'), (NULL, 'INDUSTRIAL'), (NULL, 'AMBIENTAL'), (NULL, 'ENERGIAS'), (NULL, 'ADMINISTRACION'), (NULL, 'BANCARIA');
+INSERT INTO `sede` (`id`, `sede`) VALUES (NULL, 'QUIRINAL'), (NULL, 'PRADO ALTO');

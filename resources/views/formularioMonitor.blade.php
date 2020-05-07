@@ -20,50 +20,43 @@
         </div>
     </div>
     <div class="form-row">
-        <div class="form-group col-md-6">
-            <label for="facultad">Programa</label>
-            <select id="programa" class="form-control" name="programa" required>
-            <option value="">Seleccionar--</option>
-            <option value="SISTEMAS">SISTEMAS</option>
-            <option value="MECATRONICA">MECATRONICA</option>
-            <option value="INDUSTRIAL">INDUSTRIAL</option>
-            <option value="AMBIENTAL">AMBIENTAL</option>
+    <div class="form-group col-md-6">
+            <label for="inputState">Programa:</label>
+            <select name="programa" id="programa" class="form-control">
+                <option value="">Seleccionar</option>
+                @foreach (nombrePrograma() as $nombrePrograma)
+                  <option value="{{$nombrePrograma->nombre}}">{{$nombrePrograma->nombre}}</option>
+                @endforeach
             </select>
         </div>
         
         <div class="form-group col-md-6">
-            <label for="semestre">Semestre</label>
-            <select id="semestre" class="form-control" name="semestre" required>
-            <option value="">Seleccionar--</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
+            <label for="inputState">Semestre:</label>
+            <select name="semestre" id="semestre" class="form-control">
+                <option value="">Seleccionar</option>
+                @foreach (semestre() as $semestre)
+                  <option value="{{$semestre->semestre}}">{{$semestre->semestre}}</option>
+                @endforeach
             </select>
         </div>
     </div>
     <div class="form-row">
-        <div class="form-group col-md-6">
-            <label for="sala">Sala en la que va a laborar</label>
-            <select id="sala" class="form-control" name="sala" required>
-            <option value="">Seleccionar--</option>
-            <option value="C4-11">C4-11</option>
-            <option value="B2-208">B2-208</option>
+    <div class="form-group col-md-6">
+            <label for="inputState">Sala:</label>
+            <select name="sala" id="sala" class="form-control">
+                <option value="">Seleccionar</option>
+                @foreach (sala() as $sala)
+                  <option value="{{$sala->sala}}">{{$sala->sala}}</option>
+                @endforeach
             </select>
         </div>
         <div class="form-group col-md-6">
-            <label for="horario">Horario en el que va a laborar</label>
-            <select id="horario" class="form-control" name="horario" required>
-            <option value="">Seleccionar--</option>
-            <option value="8:00 - 12:00">8:00 - 12:00</option>
-            <option value="14:00 - 18:00">14:00 - 18:00</option>
-            <option value="18:00 - 22:00">18:00 - 22:00</option>
+            <label for="inputState">Horario:</label>
+            <select name="horario" id="horario" class="form-control">
+                <option value="">Seleccionar</option>
+                @foreach (horario() as $horario)
+                  <option value="{{$horario->horario}}">{{$horario->horario}}</option>
+                @endforeach
             </select>
         </div>
     </div>

@@ -6,9 +6,40 @@ use App\Model\registromonitor;
 use App\Model\reportarFalla;
 use App\Model\perdida;
 use App\Model\programa;
+use App\Model\semestre;
+use App\Model\sala;
+use App\Model\horario;
+use App\Model\equipo;
+use App\Model\sede;
+
 
 function nombrePrograma (){
     $users = programa::all();
+    return $users;
+}
+
+function sede (){
+    $users = sede::all();
+    return $users;
+}
+
+function sala (){
+    $users = sala::all();
+    return $users;
+}
+
+function horario (){
+    $users = horario::all();
+    return $users;
+}
+
+function equipo (){
+    $users = equipo::all();
+    return $users;
+}
+
+function semestre (){
+    $users = semestre::all();
     return $users;
 }
 
