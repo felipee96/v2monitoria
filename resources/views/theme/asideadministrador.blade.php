@@ -14,6 +14,29 @@
           <hr style="width:90%; background-color: green; height: 1px">
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
+              <i class="fas fa-user-lock"></i>
+              <p>
+                Usuarios
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('register') }}" class="nav-link">
+                  <i class="fas fa-user-lock nav-icon"></i>
+                  <p>Crear usuario</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/Ver_Monitores" class="nav-link">
+                  <i class="fas fa-user-edit nav-icon"></i>
+                  <p>Ver usuarios registrados</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
               <i class="fas fa-users"></i>
               <p>
                 Monitores
@@ -22,12 +45,6 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/registro" class="nav-link">
-                  <i class="fas fa-user-plus nav-icon"></i>
-                  <p>Añadir monitor</p>
-                </a>
-              </li>
-              <li class="nav-item">
                 <a href="/Ver_Monitores" class="nav-link">
                   <i class="fas fa-user-edit nav-icon"></i>
                   <p>Ver monitores</p>
@@ -35,7 +52,6 @@
               </li>
             </ul>
           </li>
-
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="fas fa-file"></i>
@@ -57,37 +73,20 @@
                   <p>Ver reportes</p>
                 </a>
               </li>
-              <li class="nav-item has-treeview">
-              <li class="nav-item">
-                <a href="/Ver_Fallas" class="nav-link">
-                  <i class="fas fa-desktop nav-icon"></i>
-                  <p>Ver fallas en equipos</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/Ver_Perdidas" class="nav-link">
-                  <i class="fas fa-book-dead nav-icon"></i>
-                  <p>Ver perdidas en salas</p>
-                </a>
-              </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview"style="background: #369b56">
-            <a href="#" class="nav-link">
-                <i class="fas fa-file"></i>
-                <p>
-                Datos personales
-                <i class="right fas fa-angle-left"></i>              
-              </p>
+          <li class="nav-item has-treeview">
+            <a href="/Ver_Fallas" class="nav-link">
+              <i class="fas fa-desktop "></i>
+              <p>Ver fallas en equipos</p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
-                  <i class="fas fa-file nav-icon"></i>
-                  <p>Editar información</p>
-                </a>
-              </li>
-            </ul>
+            
+          </li> 
+          <li class="nav-item has-treeview">
+            <a href="/Ver_Perdidas" class="nav-link">
+              <i class="fas fa-book-dead "></i>
+              <p>Ver perdidas en salas</p>
+            </a>
           </li>
         </ul>
       </nav>

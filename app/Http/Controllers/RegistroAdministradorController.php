@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Model\registromonitor;
+use App\Model\registroAdministrador;
 
-class RegistromonitorController extends Controller
+
+class RegistroAdministradorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -36,8 +37,8 @@ class RegistromonitorController extends Controller
     public function store(Request $request)
     {
         $datosRegistro = request()->except('_token');
-        registromonitor::insert($datosRegistro);
-        return view('modMonitor');
+        registroAdministrador::insert($datosRegistro);
+        return view('modAdministrador');
     }
 
     /**

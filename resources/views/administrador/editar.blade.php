@@ -14,22 +14,18 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                     <label for="inputState">Nombre monitor:</label>
-                    <select name="nombre" id="nombre" class="form-control">
-                        <option value="">--Seleccionar</option>
-                        @foreach (nombreMonitor() as $nombreMonitor)
-                        <option value="{{$nombreMonitor->name}}">{{$nombreMonitor->name}}</option>
-                        @endforeach
-                    </select>
+                    <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="Ingrese Codigo" placeholder="Ingrese Nombre" required>
+
                     </div>
                     <div class="form-group col-md-6">
                         <label for="inputState">Codigo del estudiante:</label>
-                        <input type="text" class="form-control" id="codigo" name="codigo" aria-describedby="Ingrese Codigo" placeholder="Codigo">
+                        <input type="text" class="form-control" id="codigo" name="codigo" aria-describedby="Ingrese Codigo" placeholder="Ingrese Codigo" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="facultad">Programa</label>
-                        <select id="programa" class="form-control" name="programa">
+                        <select id="programa" class="form-control" name="programa" required>
                         <option value="">Seleccionar--</option>
                         <option value="SISTEMAS">SISTEMAS</option>
                         <option value="MECATRONICA">MECATRONICA</option>
@@ -40,7 +36,7 @@
                     
                     <div class="form-group col-md-6">
                         <label for="semestre">Semestre</label>
-                        <select id="semestre" class="form-control" name="semestre">
+                        <select id="semestre" class="form-control" name="semestre" required>
                         <option value="">Seleccionar--</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -58,7 +54,7 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="sala">Sala en la que va a laborar</label>
-                        <select id="sala" class="form-control" name="sala">
+                        <select id="sala" class="form-control" name="sala" required>
                         <option value="">Seleccionar--</option>
                         <option value="C4-11">C4-11</option>
                         <option value="B2-208">B2-208</option>
@@ -66,7 +62,7 @@
                     </div>
                     <div class="form-group col-md-6">
                         <label for="horario">Horario en el que va a laborar</label>
-                        <select id="horario" class="form-control" name="horario">
+                        <select id="horario" class="form-control" name="horario" required>
                         <option value="">Seleccionar--</option>
                         <option value="8:00 - 12:00">8:00 - 12:00</option>
                         <option value="14:00 - 18:00">14:00 - 18:00</option>
@@ -76,7 +72,7 @@
                 </div>
                 <div class="form-group">
                     <label for="inputState">Nombre del administrador:</label>
-                    <input type="text" class="form-control" id="administrador" name="administrador" aria-describedby="emailHelp" placeholder="Nombre Administrador" value="{{ Auth::user()->name }}" readonly>
+                    <input type="text" class="form-control" id="administrador" name="administrador" aria-describedby="emailHelp" placeholder="Nombre Administrador" value="{{ Auth::user()->name }}" readonly required>
                 </div> 
             </form>
             </div>
