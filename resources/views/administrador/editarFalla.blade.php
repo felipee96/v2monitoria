@@ -12,7 +12,7 @@
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="inputState">Sede:</label>
-            <input type="text" class="form-control" id="sede" name="sede" value="{{ $users->sede}}" readonly>
+            <input type="text" class="form-control" id="sede" name="sede" value="{{ $users->id_sede}}" readonly>
         </div>
         <div class="form-group col-md-6">
             <label for="inputState">Sala:</label>

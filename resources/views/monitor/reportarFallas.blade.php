@@ -11,10 +11,10 @@
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="inputState">Sede:</label>
-            <select name="sede" id="sede" class="form-control">
+            <select name="id_sede" id="id_sede" class="form-control">
                 <option value="">Seleccionar</option>
                 @foreach (sede() as $sede)
-                  <option value="{{$sede->sede}}">{{$sede->sede}}</option>
+                  <option value="{{$sede->id}}">{{$sede->sede}}</option>
                 @endforeach
             </select>
         </div>

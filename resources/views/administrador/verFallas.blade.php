@@ -24,7 +24,7 @@
                 <tr>
                     <th scope="row">{{$row->id }}</th>
                     <td>{{$row->monitor }}</td>
-                    <td>{{$row->sede }}</td>
+                    <td>{{$row->id_sede }}</td>
                     <td>{{$row->sala }}</td>
                     <td>{{$row->equipo }}</td>
                     <td>{{$row->descripcion }}</td>

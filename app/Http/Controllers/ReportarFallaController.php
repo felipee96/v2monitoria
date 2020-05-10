@@ -78,7 +78,7 @@ class ReportarFallaController extends Controller
     {
         $users = reportarFalla::find($id);
         $users->monitor = $request->input('monitor');
-        $users->sede = $request->input('sede');
+        $users->id_sede = $request->input('id_sede');
         $users->sala = $request->input('sala');
         $users->equipo = $request->input('equipo');
         $users->descripcion = $request->input('descripcion');

@@ -16,7 +16,8 @@ class CreateReportarFallasTable extends Migration
         Schema::create('reportar_fallas', function (Blueprint $table) {
             $table->id();
             $table->string('monitor',50);
-            $table->string('sede',50);
+            $table->unsignedInteger('id_sede');
+            $table->foreign('id_sede')->references('id')->on('sede');
             $table->string('sala',50);
             $table->string('equipo',50);
             $table->string('descripcion',200);

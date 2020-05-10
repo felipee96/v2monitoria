@@ -96,7 +96,7 @@ class RegistromonitorController extends Controller
         $users = registromonitor::findOrFail($id);
         $users->delete();
 
-        return redirect('/Ver_Monitores')->with('status','Monitor eliminado correctamente');
+        return redirect('/Ver_Monitores')->with('status2','Monitor eliminado correctamente');
 
     }
 }
