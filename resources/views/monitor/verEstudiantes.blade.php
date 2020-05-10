@@ -1,7 +1,12 @@
 @extends('modMonitor')
 
 @section('contenido')
-    <h1 style="text-align: center">Estudiantes ingresados</h1>
+    <h1 style="text-align: center">ESTUDIANTES INGRESADOS</h1>
+    @if (session('status'))
+        <div class="alert alert-success" role="alert">
+            {{ session('status') }}
+        </div>
+    @endif
     <table class="table table-striped">
         <thead>
         <tr>

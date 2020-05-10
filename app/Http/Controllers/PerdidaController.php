@@ -41,7 +41,8 @@ class PerdidaController extends Controller
     {
         $datosRegistro = request()->except('_token');
         perdida::insert($datosRegistro);
-        return view('modMonitor');
+        return redirect('modMonitor')->with('status','Se reporto la perdida correctamente.');
+
     }
 
     /**
@@ -63,7 +64,8 @@ class PerdidaController extends Controller
      */
     public function edit($id)
     {
-        //
+        $users = perdida::findOrFail($id);
+        return view('administrador.editarPerdida')->with('users', $users);
     }
 
     /**
@@ -75,7 +77,17 @@ class PerdidaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $users = perdida::find($id);
+        $users->monitor = $request->input('monitor');
+        $users->sede = $request->input('sede');
+        $users->sala = $request->input('sala');
+        $users->equipo = $request->input('equipo');
+        $users->equipo = $request->input('equipo');
+        $users->objeto = $request->input('objeto');
+        $users->estado = $request->input('estado');
+        $users->update();
+
+        return redirect('/Ver_Perdidas')->with('status','Perdida revisada correctamente');
     }
 
     /**

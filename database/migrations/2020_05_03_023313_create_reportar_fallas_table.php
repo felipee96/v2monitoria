@@ -20,6 +20,8 @@ class CreateReportarFallasTable extends Migration
             $table->string('sala',50);
             $table->string('equipo',50);
             $table->string('descripcion',200);
+            $table->string('estado',50)->default('Pendiente');
+            $table->timestamps();
         });
     }
 

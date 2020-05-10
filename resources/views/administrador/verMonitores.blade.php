@@ -1,8 +1,12 @@
 @extends('modAdministrador')
 
 @section('contenido')
-    @include('administrador/editar')
-    <h1 style="text-align: center">Monitores ingresados</h1>
+    <h1 style="text-align: center">INFORMACIÓN MONITORES REGISTRADOS</h1>
+    @if (session('status'))
+        <div class="alert alert-danger" role="alert">
+            {{ session('status') }}
+        </div>
+    @endif
     <table class="table table-striped">
         <thead>
         <tr>
@@ -28,10 +32,14 @@
                     <td>{{$row->horario }}</td>
                     <td>{{$row->administrador }}</td>
                     <td>
-                        <a href="/editar" class="btn btn-success pull-right" data-toggle="modal" data-target="#editar">EDITAR</a>
+                       <a href="/Editar-Monitor/{{$row->id }}" class="btn btn-success pull-right">EDITAR</a>
                     </td>
                     <td>
-                        <a href="#" class="btn btn-danger">ELIMINAR</a>
+                        <form action="/Eliminar-Monitor/{{$row->id }}" method="post">
+                            {{ csrf_field()}}
+                            {{ method_field('DELETE')}}
+                            <button type="submit" class="btn btn-danger">ELIMINAR</button>
+                        </form>
                     </td>
                 </tr>
             @endforeach-

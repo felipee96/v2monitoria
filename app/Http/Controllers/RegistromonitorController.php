@@ -37,7 +37,7 @@ class RegistromonitorController extends Controller
     {
         $datosRegistro = request()->except('_token');
         registromonitor::insert($datosRegistro);
-        return view('modMonitor');
+        return redirect('modMonitor')->with('status','Monitor ingresado correctamente');
     }
 
     /**
@@ -57,9 +57,10 @@ class RegistromonitorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request, $id)
     {
-        //
+        $users = registromonitor::findOrFail($id);
+        return view('administrador.pruebaEditar')->with('users', $users);
     }
 
     /**
@@ -71,7 +72,17 @@ class RegistromonitorController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $users = registromonitor::find($id);
+        $users->nombre = $request->input('nombre');
+        $users->codigo = $request->input('codigo');
+        $users->programa = $request->input('programa');
+        $users->semestre = $request->input('semestre');
+        $users->sala = $request->input('sala');
+        $users->horario = $request->input('horario');
+        $users->administrador = $request->input('administrador');
+        $users->update();
+
+        return redirect('/Ver_Monitores')->with('status','Monitor actualizado correctamente');
     }
 
     /**
@@ -82,6 +93,10 @@ class RegistromonitorController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $users = registromonitor::findOrFail($id);
+        $users->delete();
+
+        return redirect('/Ver_Monitores')->with('status','Monitor eliminado correctamente');
+
     }
 }

@@ -31,5 +31,8 @@ class HomeController extends Controller
 
         return view('/formularioMonitor');
     }
-
+    public function verUsuarios()
+    {   
+        return view('administrador.verUsuarios');
+    }
 }

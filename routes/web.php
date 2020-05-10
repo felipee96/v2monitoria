@@ -49,3 +49,22 @@ Route::get('/Ver_Monitores','RegistromonitorController@verMonitores');
 Route::get('/Ver_Fallas','ReportarFallaController@verFallas');
 
 Route::get('/Ver_Perdidas','PerdidaController@verPerdidas');
+
+Route::get('/Ver_Usuarios','HomeController@verUsuarios');
+
+//RUTA PARA EDITAR
+Route::get('/Editar-Monitor/{id}', 'RegistroMonitorController@edit');
+
+Route::get('/Editar-Falla/{id}', 'ReportarFallaController@edit');
+
+Route::get('/Editar-Perdida/{id}', 'PerdidaController@edit');
+
+//RUTA PARA ACTUALIZAR
+Route::put('/Actualizar-Monitor/{id}', 'RegistroMonitorController@update');
+
+Route::put('/Actualizar-Falla/{id}', 'ReportarFallaController@update');
+
+Route::put('/Actualizar-Perdida/{id}', 'PerdidaController@update');
+
+//RUTA PARA ELIMINAR
+Route::delete('/Eliminar-Monitor/{id}', 'RegistroMonitorController@destroy');

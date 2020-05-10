@@ -1,7 +1,12 @@
-<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+<nav class="main-header navbar navbar-expand navbar-light" style="background:rgb(243, 164, 74)">
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" data-widget="pushmenu" href="/home"><i class="fas fa-bars"></i></a>
+      <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars" style="color: green"></i></a>
+    </li>
+  </ul>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="/modMonitor"><i class="fas fa-home" style="color: green"> Inicio</i></a>
     </li>
   </ul>
   <ul class="navbar-nav ml-auto">

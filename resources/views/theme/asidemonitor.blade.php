@@ -1,67 +1,81 @@
-<aside class="main-sidebar  sidebar-dark-primary elevation-4" style="background: #014516">
+<aside class="main-sidebar  sidebar-dark-primary elevation-4" style="background: #209F85;">
   <!-- Brand Logo -->
-    <a href="/modMonitor" class="brand-link">
-      <img src= "{{asset("assets/img/logoCorhuila.jpg")}}" class="brand-image img-rounded">
-      <span class="brand-text font-weight-light">CORHUILA</span>
-    </a>
 
-    <!-- Sidebar -->
-    <div class="sidebar">      
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <li class="nav-header" style="text-align:center; font-size:25px">MONITOR</li>                  
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <li class="nav-header">
+          <img src="{{asset("imagenes/monitorprofile.png")}}"
+            style="width: 200px; display: block; margin-left: auto; margin-right: auto">
+          <h3 style="text-align: center; margin-top: -20px; color:rgb(27, 26, 26)">{{ Auth::user()->name }}</h3>
           <hr style="width:90%; background-color: green; height: 1px">
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="fas fa-users"></i>
-              <p>
-                Control
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/control" class="nav-link">
-                  <i class="fas fa-user-plus nav-icon"></i>
-                  <p>Registrar estudiante</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/Ver_Estudiantes" class="nav-link">
-                  <i class="fas fa-user-edit nav-icon"></i>
-                  <p>Ver estudiantes</p>
-                </a>
-              </li>
-            </ul>
-          </li>
+        </li>
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link">
+            <i class="fas fa-users" style="color: rgb(219, 160, 49)"></i>
+            <p>
+              Control
+              <i class="right fas fa-angle-left" style="color: black"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="/control" class="nav-link">
+                <i class="fas fa-user-plus nav-icon"></i>
+                <p>Registrar estudiante</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/Ver_Estudiantes" class="nav-link">
+                <i class="fas fa-user-edit nav-icon"></i>
+                <p>Ver estudiantes</p>
+              </a>
+            </li>
+          </ul>
+        </li>
 
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="fas fa-user-cog"></i>
-              <p>
-                Reportar
-                <i class="right fas fa-angle-left"></i>              
-              </p>
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link">
+            <i class="fas fa-user-cog" style="color: rgb(219, 160, 49)"></i>
+            <p>
+              Reportar
+              <i class="right fas fa-angle-left" style="color: black"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="/fallas" class="nav-link">
+                <i class="fas fa-desktop nav-icon"></i>
+                <p>Fallas en equipo</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/perdidas" class="nav-link">
+                <i class="fas fa-book-dead nav-icon"></i>
+                <p>Pérdida</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <div style="display: block; margin-left: auto; margin-right: auto">
+          <li class="nav-header">
+            <img src="{{asset("imagenes/logout.png")}}" style="width: 50px;display: block; margin-top: 130px">
+            <a style="font-size: 15px" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+              {{ __('Salir') }}
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/fallas" class="nav-link">
-                  <i class="fas fa-desktop nav-icon"></i>
-                  <p>Fallas en equipo</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/perdidas" class="nav-link">
-                  <i class="fas fa-book-dead nav-icon"></i>
-                  <p>Pérdida</p>
-                </a>
-              </li>
-            </ul>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              @csrf
+            </form>
           </li>
-        </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
-  </aside>
+        </div>
+
+      </ul>
+    </nav>
+    <!-- /.sidebar-menu -->
+  </div>
+  <!-- /.sidebar -->
+</aside>

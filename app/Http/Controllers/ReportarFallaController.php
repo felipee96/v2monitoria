@@ -41,7 +41,7 @@ class ReportarFallaController extends Controller
     {
         $datosRegistro = request()->except('_token');
         reportarFalla::insert($datosRegistro);
-        return view('modMonitor');
+        return redirect('modMonitor')->with('status','Se reporto la falla correctamente.');
     }
 
     /**
@@ -63,7 +63,8 @@ class ReportarFallaController extends Controller
      */
     public function edit($id)
     {
-        //
+        $users = reportarFalla::findOrFail($id);
+        return view('administrador.editarFalla')->with('users', $users);
     }
 
     /**
@@ -75,7 +76,16 @@ class ReportarFallaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $users = reportarFalla::find($id);
+        $users->monitor = $request->input('monitor');
+        $users->sede = $request->input('sede');
+        $users->sala = $request->input('sala');
+        $users->equipo = $request->input('equipo');
+        $users->descripcion = $request->input('descripcion');
+        $users->estado = $request->input('estado');
+        $users->update();
+
+        return redirect('/Ver_Fallas')->with('status','Falla revisada correctamente');
     }
 
     /**

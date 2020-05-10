@@ -11,6 +11,7 @@ use App\Model\sala;
 use App\Model\horario;
 use App\Model\equipo;
 use App\Model\sede;
+use App\Model\usuarios;
 
 
 function nombrePrograma (){
@@ -59,4 +60,9 @@ function verPerdida(){
     $users = perdida::all();
     return $users;        
 }
+function verUsuarios(){
+    $users = usuarios::all();
+    return $users;        
+}
+
 ?>

@@ -21,14 +21,14 @@
               </p>
             </a>
             <ul class="nav nav-treeview">
-              <li class="nav-item">
+              <li class="nav-item" style="background: #369b56">
                 <a href="{{ route('register') }}" class="nav-link">
                   <i class="fas fa-user-lock nav-icon"></i>
                   <p>Crear usuario</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/Ver_Monitores" class="nav-link">
+                <a href="/Ver_Usuarios" class="nav-link">
                   <i class="fas fa-user-edit nav-icon"></i>
                   <p>Ver usuarios registrados</p>
                 </a>

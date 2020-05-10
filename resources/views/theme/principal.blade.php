@@ -35,13 +35,12 @@
       <!--Fin Header-->
       <!--Inicio Aside-->
       <!--Fin Aside-->
-      <div class="content-wrapper">
-        <div class="container">
+      <div class="content-wrapper bg-white">
+        <div class="container" style="padding: 20px">
           @yield('contenido')
         </div>
       </div>
       <!-- Inicio footer-->
-      @include("theme/footer")
       <!-- Fin footer-->
     </div>
     <!-- jQuery -->

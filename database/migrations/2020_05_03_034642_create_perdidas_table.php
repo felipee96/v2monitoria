@@ -21,6 +21,8 @@ class CreatePerdidasTable extends Migration
             $table->string('equipo',50);
             $table->string('objeto',50);
             $table->string('descripcion',200);
+            $table->string('estado',50)->default('Pendiente');
+            $table->timestamps();
         });
     }
 

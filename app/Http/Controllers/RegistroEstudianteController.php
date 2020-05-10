@@ -42,7 +42,8 @@ class RegistroEstudianteController extends Controller
     {
         $datosRegistro = request()->except('_token');
         registroEstudiante::insert($datosRegistro);
-        return view('modMonitor');
+        return redirect('Ver_Estudiantes')->with('status','Estudiante ingresado correctamente');
+        
     }
 
     /**
