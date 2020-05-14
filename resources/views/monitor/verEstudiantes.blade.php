@@ -18,6 +18,7 @@
             <th scope="col">Semestre</th>
             <th scope="col">Equipo</th>
             <th scope="col">Monitor</th>
+            <th scope="col">Fecha Registro</th>
         </tr>
         </thead>
         <tbody>
@@ -31,6 +32,7 @@
                     <td>{{$row->semestre }}</td>
                     <td>{{$row->equipo }}</td>
                     <td>{{$row->monitor }}</td>
+                    <td>{{$row->fecha }}</td>
                 </tr>
             @endforeach
         </tbody>

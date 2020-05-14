@@ -18,6 +18,8 @@
             <th scope="col">Objeto</th>
             <th scope="col">Descripcion</th>
             <th scope="col">Estado</th>
+            <th scope="col">Fecha Creacion</th>
+            <th scope="col">Fecha Actualizacion</th>
         </tr>
     </thead>
     <tbody>
@@ -31,6 +33,8 @@
             <td>{{$row->objeto }}</td>
             <td>{{$row->descripcion }}</td>
             <td>{{$row->estado }}</td>
+            <td>{{$row->created_at }}</td>
+            <td>{{$row->updated_at }}</td>
             <td>
                 <a href="/Editar-Perdida/{{$row->id }}" class="btn btn-success pull-right">EDITAR</a>
             </td>

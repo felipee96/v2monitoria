@@ -5,10 +5,18 @@
     {{ csrf_field()}}
     {{ method_field('PUT')}}
     <h1 style="text-align: center">REVISAR FALLA</h1>
-    <div class="form-group">
-        <label for="inputAddress">Monitor</label>
-        <input type="text" class="form-control" id="monitor" name="monitor" value="{{ $users->monitor}}" readonly>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputState">FECHA DE CREACIÓN:</label>
+            <input type="text" class="form-control" id="fecha" name="fecha" value="{{ $users->fecha}}"
+                readonly>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputAddress">Monitor</label>
+            <input type="text" class="form-control" id="monitor" name="monitor" value="{{ $users->monitor}}" readonly>
+        </div>
     </div>
+    
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="inputState">Sede:</label>

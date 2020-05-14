@@ -4,9 +4,17 @@
 <form class="container" method="POST" action="{{url('perdidas')}}" style="width: 50%;">
     {{ csrf_field()}}
     <h1 style="text-align: center">REPORTAR PERDIDAS EN SALA</h1>
-    <div class="form-group">
-        <label for="inputAddress">Monitor</label>
-        <input type="text" class="form-control" id="monitor" name="monitor" value="{{ Auth::user()->name }}"readonly>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputState">FECHA-HORA:</label>
+            <input type="text" class="form-control" id="created_at" name="created_at" value="{{ date('Y-m-d H:i:s')}}"
+                readonly>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputAddress">Monitor</label>
+            <input type="text" class="form-control" id="monitor" name="monitor" value="{{ Auth::user()->name }}"
+                readonly>
+        </div>
     </div>
     <div class="form-row">
         <div class="form-group col-md-6">

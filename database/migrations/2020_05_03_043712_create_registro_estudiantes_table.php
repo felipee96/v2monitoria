@@ -22,6 +22,7 @@ class CreateRegistroEstudiantesTable extends Migration
             $table->string('semestre',50);
             $table->string('equipo',50);
             $table->string('monitor',50);
+            $table->timestamp('fecha');
         });
     }
 

@@ -86,7 +86,6 @@ class PerdidaController extends Controller
         $users->objeto = $request->input('objeto');
         $users->estado = $request->input('estado');
         $users->update();
-
         return redirect('/Ver_Perdidas')->with('status','Perdida revisada correctamente');
     }
 
