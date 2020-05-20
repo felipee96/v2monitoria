@@ -13,7 +13,6 @@ use App\Model\equipo;
 use App\Model\sede;
 use App\Model\usuarios;
 
-
 function nombrePrograma (){
     $users = programa::all();
     return $users;

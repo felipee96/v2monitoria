@@ -1,12 +1,12 @@
-<nav class="main-header navbar navbar-expand navbar-light" style="background:rgb(243, 164, 74)">
+<nav class="main-header navbar navbar-expand navbar-light" style="background: #fff">
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars" style="color: green"></i></a>
+      <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars" style="color: black"></i></a>
     </li>
   </ul>
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="/modMonitor"><i class="fas fa-home" style="color: green"> Inicio</i></a>
+      <a class="nav-link" href="/modMonitor"><i class="fas fa-home" style="color: black"> Inicio</i></a>
     </li>
   </ul>
   <ul class="navbar-nav ml-auto">

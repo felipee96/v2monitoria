@@ -10,7 +10,7 @@
           <img src="{{asset("imagenes/monitorprofile.png")}}"
             style="width: 200px; display: block; margin-left: auto; margin-right: auto">
             <div style="text-align: center; margin-top: -20px; color:rgb(27, 26, 26); display: block; margin-left: auto; margin-right: auto">
-              <h5 style="color: rgb(12, 102, 12)">HOLA</h5><h5>{{ Auth::user()->name }}</h5>
+              <h5 style="color: rgb(12, 102, 12)">HOLA</h5><h5 style="text-align: center;">{{ Auth::user()->name }}</h5>
             </div>
           <hr style="width:90%; background-color: green; height: 1px">
         </li>

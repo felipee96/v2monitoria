@@ -2,12 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-
-
 Route::get('/', function () {
     return view('welcome');
 });
-
 
 //CREAR VISTAS
 Route::get('/modAdministrador', function () {
@@ -18,15 +15,8 @@ Route::get('/modMonitor', function () {
     return view('modMonitor');
 })->name('modMonitor');
 
-
-
-
-
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
-
-
-
 
 //CREAR VISTAS PARA FORMULARIOS
 Route::resource('/registroMonitor', 'RegistroMonitorController');
@@ -41,6 +31,16 @@ Route::resource('/perdidas', 'PerdidaController');
 
 Route::get('/control','RegistroEstudianteController@index');
 Route::resource('/control', 'RegistroEstudianteController');
+
+//Nueva
+Route::get('/Ver_ReporteFalla', function () {
+    return view('administrador.reporteFalla');
+});
+Route::get('/Ver_ReportePerdida', function () {
+    return view('administrador.reportePerdida');
+});
+//
+Route::get('/Ver_Reportes','VerReportesController@index');
 
 Route::get('/Ver_Estudiantes','RegistroEstudianteController@verEstudiantes');
 

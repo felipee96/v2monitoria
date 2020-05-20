@@ -15,10 +15,8 @@
 <script src="https://kit.fontawesome.com/db4851e8ac.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
     <div>
         @yield('contenido')
-    </div>
-    
+    </div> 
 </body>
 </html>
