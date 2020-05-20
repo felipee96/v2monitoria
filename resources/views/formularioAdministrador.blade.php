@@ -16,7 +16,7 @@
 
         <div class="form-group col-md-6">
             <label for="inputState">Cedula:</label>
-            <input type="text" class="form-control" id="cedula" name="cedula" aria-describedby="Ingrese cedula" placeholder="Ingrese cedula" required>
+            <input type="number" class="form-control" id="cedula" name="cedula" aria-describedby="Ingrese cedula" placeholder="Ingrese cedula" required>
         </div>
     </div>
     <div class="form-row">
@@ -26,7 +26,7 @@
         </div>
         <div class="form-group col-md-6">
             <label for="inputState">Telefono:</label>
-        <input type="text" class="form-control" id="telefono" name="telefono" aria-describedby="emailHelp" placeholder="Ingrese telefono"  required>
+        <input type="number" class="form-control" id="telefono" name="telefono" aria-describedby="emailHelp" placeholder="Ingrese telefono"  required>
         </div>
     </div>
     <div style="text-align:center;">

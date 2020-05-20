@@ -1,16 +1,20 @@
-<aside class="main-sidebar  sidebar-dark-primary elevation-4" style="background: #209F85;">
+<aside class="main-sidebar  sidebar-dark-primary elevation-4" style="background: #31A05E;">
   <!-- Brand Logo -->
-
-  <!-- Sidebar -->
+ <!-- Sidebar -->
   <div class="sidebar">
     <!-- Sidebar Menu -->
     <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <li class="nav-item" style="display: block; margin-left: auto; margin-right: auto">
+          <a class="nav-link" href="/modMonitor">
+            <i class="fas fa-home" style="color: rgb(88, 219, 88);"></i>
+          </a>
+        </li>
         <li class="nav-header">
           <img src="{{asset("imagenes/monitorprofile.png")}}"
-            style="width: 200px; display: block; margin-left: auto; margin-right: auto">
-            <div style="text-align: center; margin-top: -20px; color:rgb(27, 26, 26); display: block; margin-left: auto; margin-right: auto">
-              <h5 style="color: rgb(12, 102, 12)">HOLA</h5><h5 style="text-align: center;">{{ Auth::user()->name }}</h5>
+            style="width: 200px; display: block; margin-left: auto; margin-right: auto; margin-top: -60px">
+            <div style="margin-top: -20px; color:rgb(27, 26, 26); text-align: center">
+              <h5 style="color: rgb(204, 202, 198)">BIENVENIDO</h5><h5>{{ Auth::user()->name }}</h5>
             </div>
           <hr style="width:90%; background-color: green; height: 1px">
         </li>
@@ -63,7 +67,7 @@
         </li>
         <div style="display: block; margin-left: auto; margin-right: auto">
           <li class="nav-header">
-            <img src="{{asset("imagenes/logout.png")}}" style="width: 50px;display: block; margin-top: 130px">
+            <img src="{{asset("imagenes/logout.png")}}" style="width: 50px;display: block; margin-top: 50px">
             <a style="font-size: 15px" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();">
               {{ __('Salir') }}

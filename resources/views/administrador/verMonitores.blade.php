@@ -19,7 +19,7 @@
             <th scope="col">Nombre</th>
             <th scope="col">Codigo</th>
             <th scope="col">Programa</th>
-            <th scope="col">Semestre</th>
+            <th scope="col-2">Semestre</th>
             <th scope="col">Sala</th>
             <th scope="col">Horario</th>
             <th scope="col">Administrador</th>
@@ -41,13 +41,13 @@
             <td>{{$row->created_at }}</td>
             <td>{{$row->updated_at }}</td>
             <td>
-                <a href="/Editar-Monitor/{{$row->id }}" class="btn btn-success pull-right">EDITAR</a>
+                <a href="/Editar-Monitor/{{$row->id }}" class="btn btn-success pull-right btn-sm" style="">EDITAR</a>
             </td>
             <td>
                 <form action="/Eliminar-Monitor/{{$row->id }}" method="post">
                     {{ csrf_field()}}
                     {{ method_field('DELETE')}}
-                    <button type="submit" class="btn btn-danger">ELIMINAR</button>
+                    <button type="submit" class="btn btn-danger btn-sm" style="">ELIMINAR</button>
                 </form>
             </td>
         </tr>

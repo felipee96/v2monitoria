@@ -17,7 +17,7 @@
 
         <div class="form-group col-md-6">
             <label for="inputState">Codigo del estudiante:</label>
-            <input type="text" class="form-control" id="codigo" name="codigo" aria-describedby="Ingrese Codigo"
+            <input type="number" class="form-control" id="codigo" name="codigo" aria-describedby="Ingrese Codigo"
                 placeholder="Codigo" required>
         </div>
     </div>

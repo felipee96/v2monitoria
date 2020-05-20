@@ -39,8 +39,13 @@ Route::get('/Ver_ReporteFalla', function () {
 Route::get('/Ver_ReportePerdida', function () {
     return view('administrador.reportePerdida');
 });
+Route::get('/Ver_ReporteUsuarios', function () {
+    return view('administrador.reporteUsuarios');
+});
+Route::get('/Ver_ReporteMonitores', function () {
+    return view('administrador.reporteMonitores');
+});
 //
-Route::get('/Ver_Reportes','VerReportesController@index');
 
 Route::get('/Ver_Estudiantes','RegistroEstudianteController@verEstudiantes');
 

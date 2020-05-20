@@ -61,6 +61,8 @@ class RegistromonitorController extends Controller
     {
         $users = registromonitor::findOrFail($id);
         return view('administrador.pruebaEditar')->with('users', $users);
+        //findorfail sirve para nos permite recuperar un registro de un modelo
+         //a partir de su ID sin necesidad de comprobar si existe
     }
 
     /**
@@ -72,6 +74,9 @@ class RegistromonitorController extends Controller
      */
     public function update(Request $request, $id)
     {
+        //puedes ejecutar el método find con un arreglo de claves primarias
+        //, el cual devolverá una colección de los registros que coincidan
+        
         $users = registromonitor::find($id);
         $users->nombre = $request->input('nombre');
         $users->codigo = $request->input('codigo');
